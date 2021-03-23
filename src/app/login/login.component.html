@@ -1,0 +1,66 @@
+<body>
+  <div id="login">
+    <div class="container">
+      <div id="login-row" class="row justify-content-center align-items-center">
+        <div id="login-column" class="col-md-6">
+          <div id="login-box" class="col-md-12">
+            <form
+              #loginForm="ngForm"
+              class="form-signin"
+              (ngSubmit)="login(loginForm)"
+            >
+            <br>
+              <h3 class="text-center text-light">İlaç Hatırlama Sistemi</h3>
+              <br />
+              <div class="form-label-group">
+                <label for="email" class="text-light">Kullanıcı Adresi</label
+                ><br />
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  #email="ngModel"
+                  [(ngModel)]="model.email"
+                  class="form-control"
+                  placeholder="Kullanıcı Adresi"
+                  required
+                  autofocus
+                />
+              </div>
+
+              <div class="form-label-group">
+                <label for="password" class="text-light">Şifre:</label><br />
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                  #password="ngModel"
+                  [(ngModel)]="model.password"
+                  class="form-control"
+                  placeholder="Şifre"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="remember-me" class="text-light"
+                  ><span>Hatırla</span> <span
+                    ><input
+                      id="remember-me"
+                      name="remember-me"
+                      type="checkbox" /></span></label
+                ><br /><br />
+                <button
+                  class="btn btn-lg btn-primary btn-block"
+                  type="submit"
+                  routerLink="/giriş"
+                >
+                  Giriş Yap
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>

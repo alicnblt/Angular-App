@@ -1,0 +1,13 @@
+.form-group{
+    width: 400px;
+  }
+  select{
+      height: 40px;
+      width: 200px;
+      position: relative;
+      font-family: Arial;
+      background-color: gainsboro;
+      border: 3px solid transparent;
+    border-color: #fff transparent transparent transparent;
+     
+  }
